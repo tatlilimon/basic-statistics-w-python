@@ -11,7 +11,7 @@ Hangi konuda hesaplama yapılması gerekiyorsa o başlıkta bulunan python dosya
 Python ile veri analizi yapmak için belirli kütüphanelere ihtiyaç duyulur.
 
 - İlk olarak python'ın 3.3 ve üzeri sürümünün cihazınızda yüklü olması gerekir. Bunu kontrol etmek için, cmd veya terminal vasıtası ile  `python --version` komutu ile kontrol edilir. Eğer yüklü değil ise; python, cihaza mutlaka kurulmalıdır.
-- Gerekli tüm kütüphaneleri bir anda kurmak için **terminal veya cmd** de bu kodu çalıştırınız. `pip3 install -r requirements.txt`
+- Gerekli tüm kütüphaneleri bir anda kurmak için **terminal veya cmd** de proje dizinine `cd` komutu ile gidin ve bu kodu çalıştırınız. `pip3 install -r requirements.txt`
 - Eğer programlar haladaha çalışmıyor ise; requirements.txt adlı dosyadaki kütüphaneleri: `pip show kütüphaneAdi` olarak yüklü olup olmadığını kontrol edin.
 - Eğer değil ise manuel olarak yükleyin. `pip install kütüphaneAdi`
 
