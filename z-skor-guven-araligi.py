@@ -1,18 +1,29 @@
 import numpy as np
 from colorama import Fore, Style
 
-# Veri seti oluştur: 1,2,3,4 yazan kısıma veri setini giriniz.
-data = np.array([1,2,3,4])
+# Kullanıcıdan veri setini girmesini iste
+input_data = input(Fore.BLUE +"Veri setinizi; aralarında virgül olacak şekilde giriniz ve ardından enter'a basınız: " + Fore.RESET)
+# Kullanıcının girdiği veriyi virgülle böl ve numpy dizisine dönüştür
+data = np.array([float(x) for x in input_data.split(",")])
 
-# Verinin ortalamasını hesaplanır
+# Kullanıcıdan güven seviyesini girmesini iste
+confidence_level = float(input(Fore.BLUE +"Güven seviyesini belirtiniz (0.05 yada 0.01): " + Fore.RESET))
+
+# Güven seviyesine göre z skorunu belirle
+z_score = 1.96 if confidence_level == 0.05 else 2.58 if confidence_level == 0.01 else None
+if z_score is None:
+    print(Fore.RED + "Geçerli bir güven seviyesi girilmedi!" + Fore.RESET)
+    exit()
+
+# Verinin ortalamasını hesapla
 mean = np.mean(data)
 
-# Standart hata hesaplanır
-standard_error = (len(data) / np.sqrt(10))/10
+# Standart hatayı hesapla
+standard_error = np.std(data) / np.sqrt(len(data))
 
 print(Fore.GREEN +"Standart hata: " + Fore.RESET, standard_error)
 
-# 95% güven aralığı hesaplama: Eğer 0.05 değil de 0.01 güven seviyesi isteniyorsa 1.96 yazan yerler 2.58 olarak değiştiriniz.
-confidence_interval = mean - 1.96 * standard_error, mean + 1.96 * standard_error
+# Güven aralığını hesapla
+confidence_interval = mean - z_score * standard_error, mean + z_score * standard_error
 
-print(Fore.GREEN +"%95 güven aralığı: " + Fore.RESET, confidence_interval)
+print(Fore.GREEN +f"%{confidence_level*100} güven aralığı: " + Fore.RESET, confidence_interval)

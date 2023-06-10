@@ -1,9 +1,13 @@
 import numpy as np
 from colorama import Fore, Style
 
-# İki veri setini de giriniz. Eğer veri setinde belirli veriler verilmemiş ise gözardı edin.
-data1 = np.array([1,2,3])
-data2 = np.array([4,5,6])
+# Kullanıcıdan veri setlerini girmesini iste
+input_data1 = input(Fore.BLUE + "1. veri grubunuzun elemanlarını; aralarında virgül olacak şekilde giriniz ve ardından enter'a basınız: " + Fore.RESET)
+input_data2 = input(Fore.BLUE + "2. veri grubunuzun elemanlarını; aralarında virgül olacak şekilde giriniz ve ardından enter'a basınız: " + Fore.RESET)
+
+# Kullanıcının girdiği veriyi virgülle böl ve numpy dizisine dönüştür
+data1 = np.array([float(x) for x in input_data1.split(",")])
+data2 = np.array([float(x) for x in input_data2.split(",")])
 
 # Korelasyon katsayısının hesaplama kısmı
 correlation_matrix = np.corrcoef(data1, data2)

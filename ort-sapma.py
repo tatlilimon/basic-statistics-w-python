@@ -1,16 +1,20 @@
 from colorama import Fore, Style
-def ortalama_sapma(veri_seti):
-    toplam = 0
-    n = len(veri_seti)
-    ortalama = sum(veri_seti) / n
 
-    for veri in veri_seti:
-        toplam += abs(veri - ortalama)
+def mean_deviation(data_set):
+    total = 0
+    n = len(data_set)
+    mean = sum(data_set) / n
 
-    ortalama_sapma = toplam / n
-    return ortalama_sapma
+    for data in data_set:
+        total += abs(data - mean)
 
-# Verisetini, veri adlı diziye yerleştir.
-veri = [23,34,37,45,50,56,57,70,77,86,91]
-sonuc = ortalama_sapma(veri)
-print(Fore.GREEN +"Ortalama Sapma:" + Fore.RESET, sonuc)
+    mean_deviation = total / n
+    return mean_deviation
+
+# Kullanıcıdan veri sati alınır
+input_data = input(Fore.BLUE + "veri grubunu; aralarında virgül olacak şekilde giriniz ve ardından enter'a basınız: " + Fore.RESET)
+# Kullanıcıdan alınan giriş, virgülle ayrılır ve numpy arrayine dönüştürülür
+data = [float(x) for x in input_data.split(",")]
+
+result = mean_deviation(data)
+print(Fore.GREEN +"Ortalama Sapma:" + Fore.RESET, result)
