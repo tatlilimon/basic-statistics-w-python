@@ -1,7 +1,6 @@
 import numpy as np
 from scipy import stats
-GREEN = '\033[92m'
-END = '\033[0m'
+from colorama import Fore, Style
 # Örneklem verileri 1,2,3 yerine a grubunu, 4,5,6 yerine ise b grubunu yazınız.
 sample1 = np.array([1, 2, 3])
 sample2 = np.array([4, 5, 6])
@@ -17,6 +16,6 @@ standard_error_difference = np.sqrt(np.var(sample1)/len(sample1) + np.var(sample
 
 confidence_interval = stats.t.interval(confidence_level, degrees_freedom, loc=np.mean(sample1)-np.mean(sample2), scale=standard_error_difference)
 
-print(GREEN +"T istatistiği: " + END, t_statistic)
-print(GREEN +"P değeri: " + END, p_value)
-print(GREEN +"Güven aralığı: " + END, confidence_interval)
+print(Fore.GREEN +"T istatistiği: " + Fore.RESET, t_statistic)
+print(Fore.GREEN +"P değeri: " + Fore.RESET, p_value)
+print(Fore.GREEN +"Güven aralığı: " + Fore.RESET, confidence_interval)

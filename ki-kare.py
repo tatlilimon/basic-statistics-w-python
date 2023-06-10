@@ -1,7 +1,7 @@
 import numpy as np
 from scipy.stats import chisquare
-GREEN = '\033[92m'
-END = '\033[0m'
+from colorama import Fore, Style
+
 # Gözlenen frekansları alta yazınız.
 observed_frequencies = np.array([1,2,3])
 
@@ -12,8 +12,8 @@ expected_frequencies = np.full_like(observed_frequencies, np.mean(observed_frequ
 # Ki-Kare istatistiği ve p-değeri hesaplama kısmı
 chi2_stat, p_val = chisquare(observed_frequencies, f_exp=expected_frequencies)
 
-print(GREEN +"Chi-Square istatistiği: " + END, chi2_stat)
-print(GREEN +"p-değeri: " + END, p_val)
+print(Fore.GREEN +"Chi-Square istatistiği: " + Fore.RESET, chi2_stat)
+print(Fore.GREEN +"p-değeri: " + Fore.RESET, p_val)
 
 #BURASI ÖNEMLİ!!!!
 #ki-kare istatistik değeri hesaplandıktan sonra;
