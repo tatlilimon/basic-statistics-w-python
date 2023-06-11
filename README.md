@@ -1,38 +1,37 @@
-## <ins>Giriş</ins>
+## <ins>Introduction</ins>
 
-Bu repoda, basit istatistiksel kalıpları kolaylıkla hesaplayan python programları mevcuttur. Program aşağıdaki **ana menü** ile başlar.
-
-![cli-ss](https://github.com/tatlilimon/basic-statistics-w-python/assets/43828285/0de22404-8669-434b-a690-7e3aeb125f1a)
+This repo contains python programs that easily calculate simple statistical patterns. The program starts with the following **main menu**.
 
 
-Hangi konuda hesaplama yapılması gerekiyorsa, ana menüden ilgili konu seçilir ve veri seti girilmeye başlanır. Veri seti ve istenilen bilgiler girildikten sonra hesaplama sonucu komut satırında çıktı olarak verilecektir.
 
-* * *
-
-## <ins>Gereksinimlerin Yüklenme Aşaması</ins>
-
-Python ile veri analizi yapmak için belirli kütüphanelere ihtiyaç duyulur.
-
-- İlk olarak python'ın 3.3 ve üzeri sürümünün cihazınızda yüklü olması gerekir. Bunu kontrol etmek için, cmd veya terminal vasıtası ile  `python --version` komutu ile kontrol edilir. Eğer yüklü değil ise; python, cihaza <ins>**mutlaka**</ins> kurulmalıdır.
-- Gerekli tüm kütüphaneleri bir anda kurmak için **terminal veya cmd** de proje dizinine `cd` komutu ile gidin ve bu kodu çalıştırınız. `pip install -r requirements.txt`
-- Eğer programlar haladaha çalışmıyor ise; **requirements.txt** adlı dosyadaki kütüphaneleri: `pip show kütüphaneAdi` olarak yüklü olup olmadığını kontrol edin.
-- Eğer değil ise **manuel** olarak yükleyin. `pip install kütüphaneAdi`
+If a calculation is required, select the relevant subject from the main menu and start entering the data set. After entering the data set and the desired information, the calculation result will be given as output on the command line.
 
 * * *
 
-## <ins>Nasıl Kullanılır?</ins>
+## <ins>Requirements</ins>
 
-1.  **CMD** veya **Terminal** kullanarak proje dizinine `cd` komutu ile gidilir. Ya da VSCode kullanıyorsanız ve projeyi VSCode içinde açtıysanız, editörün içinde terminal açarsanız direkt olarak proje dizininde açar. cd komutuna gerek kalmaz.
-2.  Komut satırına `python3 main.py` girilerek **ana menü**ye erişilir.
-3.  Ana menüden hangi konuda istatistik hesaplamalar yapılacaksa; ilgili konunun başındaki **rakam**, <ins>direkt girdi</ins> olarak komut satırına girilir.
-4.  Veri setini komut satırına girerken, <ins>**her bir veri arasına virgül**</ins> koyup <ins>**son veriden sonra virgül koymamaya**</ins> dikkat edin!
+To analyze data with Python, certain libraries are needed.
+
+- First, python version 3.3 and above must be installed on your device. To check this, use the `python --version` command via cmd or terminal. If it is not installed, python must be installed on the device <ins>**absolutely**</ins>.
+- To install all the necessary libraries at once, go to the project directory in **terminal or cmd** with the `cd` command and run this code. `pip install -r requirements.txt`
+- If the programs are still not working, check the libraries in **requirements.txt**: `pip show libraryName` to check if they are installed.
+- If not, install them **manually**. `pip install libraryName`
 
 * * *
 
-## <ins>Projeye Katkıda Bulunmaktan Çekinmeyin!</ins>
+## <ins>How to Use</ins>
 
-Projede bulunan istatistiksel hesaplama araçlarından farklı olarak başka araçlar da <ins>**PR**</ins> açarak ekleyebilirsiniz.
+1.  Use **CMD** or **Terminal** to go to the project directory with the `cd` command. Or if you are using VSCode and you opened the project in VSCode, if you open the terminal in the editor, it will open directly in the project directory.
+2.  Enter `python3 main.py` in the command line to access the **main menu**.
+3.  From the main menu, enter the **digit** at the beginning of the related topic as <ins>direct input</ins> to the command line.
+4.  When entering the data set into the command line, be careful to put <ins>**commas**</ins> between each data and <ins>**not to put a comma after the last data**</ins>!
 
-> Proje GPL 3 lisanslaması altındadır. Yani bu yazılımı istediğiniz gibi kopyalayıp herhangi bir yerde kullanabilirsiniz lakin bunun tek şartı var o da; GPL 3 lisansı altında yayınlamanız. Yani bu kodları başka yerde kullanacaksanız o projenin de açık kaynaklı olması gerekiyor.
+* * *
+
+## <ins>Feel Free to Contribute This Project!</ins>
+
+You can add other tools besides the statistical calculation tools in the project by opening <ins>**PR**</ins>.
+
+> The project is licensed under GPL 3. This means that you can copy this software and use it anywhere you want, but there is only one condition; you must release it under the GPL 3 license. So if you are going to use this code elsewhere, that project must also be open source.
 > 
-> GPL 3 hakkında daha fazla bilgi için [Tıkla!](https://github.com/tatlilimon/basic-statistics-w-python/blob/main/LICENSE)
+> For more information about GPL 3 [Click here!](https://github.com/tatlilimon/basic-statistics-w-python/blob/main/LICENSE)
