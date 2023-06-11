@@ -6,7 +6,7 @@ def menu():
     print(Fore.CYAN + "Enter the Relevant Number and Enter to Make the Calculation You Want " + Fore.RESET)
     print(Fore.GREEN + "[1]-> Central Tandency Calculator" + Fore.RESET)
     print(Fore.BLUE + "[2]-> Average Deviation Calculator" + Fore.RESET)
-    print(Fore.MAGENTA + "[3]-> Z-Skor Confidence Level Calculator" + Fore.RESET)
+    print(Fore.MAGENTA + "[3]-> Z-Score Confidence Level Calculator" + Fore.RESET)
     print(Fore.RED + "[4]-> Normal T-Test Value and Confidence Level Calculator" + Fore.RESET)
     print(Fore.LIGHTRED_EX + "[5]-> Paired T-Test Value and Confidence Level Calculator" + Fore.RESET)
     print(Fore.YELLOW + "[6]-> Chi-Square Test Calculator" + Fore.RESET)
@@ -24,7 +24,7 @@ while True:
     elif selection == "2":
         subprocess.run(["python", "average-deviation.py"])
     elif selection == "3":
-        subprocess.run(["python", "z-skor-confidence-level.py"])
+        subprocess.run(["python", "z-score-confidence-level.py"])
     elif selection == "4":
         subprocess.run(["python", "normal-t-confidence-level.py"])    
     elif selection == "5":
