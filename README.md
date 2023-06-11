@@ -1,3 +1,8 @@
+* * *
+## **<ins>Attention:</ins>**
+
+This repository is written in Turkish. There is a branch for the full English version. To go to that version; go to this [branch](https://github.com/tatlilimon/basic-statistics-w-python/tree/main-eng).
+* * *
 ## <ins>Giriş</ins>
 
 Bu repoda, basit istatistiksel kalıpları kolaylıkla hesaplayan python programları mevcuttur. Program aşağıdaki **ana menü** ile başlar.
