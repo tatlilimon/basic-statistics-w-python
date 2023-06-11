@@ -2,6 +2,7 @@
 
 This repo contains python programs that easily calculate simple statistical patterns. The program starts with the following **main menu**.
 
+![cli-ss](https://github.com/tatlilimon/basic-statistics-w-python/assets/43828285/acca3529-ca97-42ed-8a19-1cf52f4c8458)
 
 
 If a calculation is required, select the relevant subject from the main menu and start entering the data set. After entering the data set and the desired information, the calculation result will be given as output on the command line.
