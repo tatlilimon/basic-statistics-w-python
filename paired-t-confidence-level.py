@@ -1,6 +1,8 @@
 import numpy as np
 from scipy import stats
 from colorama import Fore, Style
+from colorama import just_fix_windows_console
+just_fix_windows_console()
 
 paired_sample1_data = input(Fore.BLUE + "Enter the 1st group's data set with commas between them: " + Fore.RESET)
 paired_sample1 = np.array([float(x) for x in paired_sample1_data.split(",")])

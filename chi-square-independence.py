@@ -1,6 +1,8 @@
 import numpy as np
 from scipy.stats import chi2_contingency
 from colorama import Fore, Style
+from colorama import just_fix_windows_console
+just_fix_windows_console()
 
 num_rows = int(input(Fore.BLUE + "How many rows does your data set have: " + Fore.RESET))
 

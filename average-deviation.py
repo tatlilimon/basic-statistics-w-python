@@ -1,4 +1,6 @@
 from colorama import Fore, Style
+from colorama import just_fix_windows_console
+just_fix_windows_console()
 
 def mean_deviation(data_set):
     total = 0

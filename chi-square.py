@@ -1,6 +1,8 @@
 import numpy as np
 from scipy.stats import chisquare
 from colorama import Fore, Style
+from colorama import just_fix_windows_console
+just_fix_windows_console()
 
 input_data = input(Fore.BLUE + "Enter your data set with commas between them: " + Fore.RESET)
 observed_frequencies = np.array([float(x) for x in input_data.split(",")])

@@ -1,6 +1,8 @@
 import numpy as np
 from scipy import stats
 from colorama import Fore, Style
+from colorama import just_fix_windows_console
+just_fix_windows_console()
 
 input_data1 = input(Fore.BLUE + "Enter the 1st group's data set with commas between them: " + Fore.RESET)
 input_data2 = input(Fore.BLUE + "Enter the 2nd group's data set with commas between them: " + Fore.RESET)
