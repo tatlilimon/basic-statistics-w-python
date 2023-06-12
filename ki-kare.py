@@ -1,6 +1,8 @@
 import numpy as np
 from scipy.stats import chisquare
 from colorama import Fore, Style
+from colorama import just_fix_windows_console
+just_fix_windows_console()
 
 # Kullanıcıdan veri setini girmesini iste
 input_data = input(Fore.BLUE + "Gözlenen frekanslarınızı; aralarında virgül olacak şekilde giriniz ve ardından enter'a basınız: " + Fore.RESET)

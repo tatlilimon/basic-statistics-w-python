@@ -1,7 +1,8 @@
 import numpy as np
 from scipy.stats import f_oneway
 from colorama import Fore, Style
-
+from colorama import just_fix_windows_console
+just_fix_windows_console()
 # Kullanıcıdan grup sayısını girmesini iste
 num_groups = int(input(Fore.BLUE + "Veri setinizde kaç grup var?: " + Fore.RESET))
 

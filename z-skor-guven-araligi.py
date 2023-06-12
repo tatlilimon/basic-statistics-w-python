@@ -1,6 +1,7 @@
 import numpy as np
 from colorama import Fore, Style
-
+from colorama import just_fix_windows_console
+just_fix_windows_console()
 # Kullanıcıdan veri setini girmesini iste
 input_data = input(Fore.BLUE +"Veri setinizi; aralarında virgül olacak şekilde giriniz ve ardından enter'a basınız: " + Fore.RESET)
 # Kullanıcının girdiği veriyi virgülle böl ve numpy dizisine dönüştür

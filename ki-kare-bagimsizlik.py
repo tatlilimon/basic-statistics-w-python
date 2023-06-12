@@ -1,7 +1,8 @@
 import numpy as np
 from scipy.stats import chi2_contingency
 from colorama import Fore, Style
-
+from colorama import just_fix_windows_console
+just_fix_windows_console()
 # Kullanıcıdan satır sayısını girmesini iste
 num_rows = int(input(Fore.BLUE + "Veri setinizin kaç satırı var?: " + Fore.RESET))
 

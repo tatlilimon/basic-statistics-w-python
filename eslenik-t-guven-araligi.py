@@ -1,6 +1,8 @@
 import numpy as np
 from scipy import stats
 from colorama import Fore, Style
+from colorama import just_fix_windows_console
+just_fix_windows_console()
 
 # Kullanıcıdan her iki grubun verilerini al
 paired_sample1_data = input(Fore.BLUE + "Birinci veri setinizi; aralarında virgül olacak şekilde giriniz ve ardından enter'a basınız: " + Fore.RESET)
