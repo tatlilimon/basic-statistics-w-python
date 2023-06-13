@@ -15,7 +15,7 @@ if z_score is None:
 
 mean = np.mean(data)
 
-standard_error = np.std(data) / np.sqrt(len(data))
+standard_error = 1 / np.sqrt(len(data))
 
 print(Fore.GREEN +"Standart error: " + Fore.RESET, standard_error)
 
